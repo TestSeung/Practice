@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    ios::sync_with_stdio(false); 
+    cin.tie(0);
     vector<int>v;
     int Count, Call;
     cin >> Count;
@@ -21,9 +23,10 @@ int main()
             v.pop_back();
         }
     }
-    for (int i = 0; i < v.size(); i++)
+    while(!v.empty())
     {
-        Result += v[i];
+        Result += v.back();
+        v.pop_back();
     }
     cout << Result;
     return 0;
