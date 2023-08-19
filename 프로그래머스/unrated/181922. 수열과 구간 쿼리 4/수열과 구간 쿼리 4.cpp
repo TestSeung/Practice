@@ -9,10 +9,7 @@ vector<int> solution(vector<int> arr, vector<vector<int>> queries) {
     {
         for(int j =queries[i][0];j<=queries[i][1];j++)
         {
-                if(arr[j]==0||j==0)
-                    arr[j]++;
-            
-                else if(j%queries[i][2]==0)
+                if(j%queries[i][2]==0)
                     arr[j]++;
         }   
     }
