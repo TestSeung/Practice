@@ -5,11 +5,12 @@ using namespace std;
 
 vector<int> solution(vector<int> answers) {
    
-   vector<int> arr11;
-vector<int> arr2 = {2,1,2,3,2,4,2,5};
-vector<int> arr22;
 
+vector<int> arr2 = {2,1,2,3,2,4,2,5};
 vector<int> arr3 = {3,3,1,1,2,2,4,4,5,5};
+    
+vector<int> arr11;
+vector<int> arr22;
 vector<int> arr33;
 
 int count1 = 0;
