@@ -5,19 +5,14 @@
 
 using namespace std;
 
-
-//vector<int> reverse(vector<int> &arr);
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(0), cout.tie(0);
 	string funcP;
 	int cnt;
-	string num; // 배열에 들어있는 개수와 수
+	string num; 
 	deque<int> arr;
-	//R 배열에 수를 뒤집다
-	//D 첫번째꺼 버리기
-	//배열이 비었다면 error
-
+    
 	int T;
 	cin >> T;
 
@@ -89,12 +84,3 @@ int main() {
 	}
 
 }
-//vector<int> reverse(vector<int> &arr) {
-//	int temp;
-//	for (int i = 0;i<arr.size()/2;i++) {
-//		temp = arr[i];
-//		arr[i] = arr[arr.size()-1-i];	
-//		arr[arr.size() - 1 - i] = temp;
-//	}
-//	return arr;
-//}
