@@ -20,10 +20,7 @@ int main() {
 			i++;
 		}
 		if(i == 8){
-			while (input.find(" ") != string::npos) {
-				input.erase(input.find(" "),1);
-			}
-			count += input.size();
+			count = input.size();
 			break;
 		}
 	}
