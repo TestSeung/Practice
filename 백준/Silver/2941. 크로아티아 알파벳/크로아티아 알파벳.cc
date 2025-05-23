@@ -14,7 +14,6 @@ int main() {
 		
 		if (input.find(word[i]) != string::npos) {
 			input.replace(input.find(word[i]), word[i].size()," ");
-			count++;
 		}
 		else if (input.find(word[i]) == string::npos) {
 			i++;
