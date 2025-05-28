@@ -6,7 +6,6 @@ using namespace std;
 enum state {
 	BLANK,
 	FILL,
-	OVERLAP
 };
 
 int main() {
@@ -22,12 +21,9 @@ int main() {
 
 		for (int j = 0;j < 10;j++) {
 			for (int k = 0;k < 10;k++) {
-				if (paper[x + j][y + k] == FILL) {
-					paper[x + j][y + k] = OVERLAP;
-				}
-				else {
-					paper[x + j][y + k] = FILL;
-				}
+
+				paper[x + j][y + k] = FILL;
+
 			}
 		}
 		
@@ -36,11 +32,11 @@ int main() {
 
 	for (int i = 0;i < 100;i++) {
 		for (int j = 0;j < 100;j++) {
-			if (paper[i][j] == BLANK) {
+			if (paper[i][j] == FILL) {
 				cnt++;
 			}
 		}
 	}
-	cout << 10000-cnt;
+	cout << cnt;
 
 }
