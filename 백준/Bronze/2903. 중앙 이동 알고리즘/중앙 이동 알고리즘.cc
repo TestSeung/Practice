@@ -1,5 +1,5 @@
-#include<iostream>
-#include<math.h>
+#include <iostream>
+#include <math.h>
 using namespace std;
 
 int main() {
@@ -9,15 +9,13 @@ int main() {
 	int initNum = 4;
 
 	int result = 0;
-	int squarCnt = 1;
-	int patton = 2;
+	int squareCnt = 1;
 
 	for (int i = 0;i < num;i++) {
-		result = initNum + (sqrt(squarCnt)+1)* patton + squarCnt;
+		result = initNum + (sqrt(squareCnt)+1)* sqrt(squareCnt)*2 + squareCnt;
 
 		initNum = result;
-		squarCnt *= 4;
-		patton *= 2;
+		squareCnt *= 4;
 	}
 	cout << result;
 }
