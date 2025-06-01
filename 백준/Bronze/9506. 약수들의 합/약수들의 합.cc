@@ -26,13 +26,12 @@ int main() {
 
 		if (sum == num) {
 			cout << '=';
-			for (int i = 0;i < d.size();i++) {
-				if (i == d.size() - 1) {
-					cout << ' ' << d[i] << '\n';
-					break;
-				}
+			for (int i = 0;i < d.size()-1;i++) {
+				
 				cout <<' '<< d[i] << ' ' << '+';
 			}
+				cout << ' ' << d[d.size()-1] << '\n';
+
 			
 		}
 		else {
