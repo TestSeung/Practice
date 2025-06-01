@@ -7,8 +7,7 @@ void prime(int min, int max);
 
 int main() {
 	int num1,num2;
-	int cnt = 0;
-
+    
 	cin >> num1 >> num2;
 
 	prime(num1, num2);
