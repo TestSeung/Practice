@@ -31,18 +31,11 @@ int main() {
 		
 		while (true) {
 			
-			
-			next = firstCard;
+			temp += hand[firstCard];
 
-			temp += hand[next];
+			temp += hand[secondCard];
 
-			next = secondCard;
-
-			temp += hand[next];
-
-			next = lastCard;
-
-			temp += hand[next];
+			temp += hand[lastCard];
 			
 
 			sum.push_back(temp);
@@ -51,7 +44,7 @@ int main() {
 
 			lastCard++;
 
-			if (hand[next] == hand[hand.size()-1]) {
+			if (hand[lastCard-1] == hand[hand.size()-1]) {
 				secondCard++;
 				lastCard = secondCard + 1;
 				if (secondCard == hand.size()-1) {
