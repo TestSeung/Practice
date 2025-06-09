@@ -2,30 +2,27 @@
 
 using namespace std;
 
+
 int main() {
     int a, b, c;
 
     cin >> a >> b >> c;
 
+
+
     if (a + b <= c) {
-        while (1) {
-            c--;
-            if (a + b > c)break;
-        }
+       cout << 2*a + 2*b - 1;
     }
     else if (a + c <= b) {
-        while (1) {
-            b--;
-            if (a + c > b)break;
-        }
+        cout << 2 * a + 2 * c - 1;
     }
     else if (b + c <= a) {
-        while (1) {
-            a--;
-            if (b + c > a)break;
-        }
+        cout << 2 * b + 2 * c - 1;
+    }
+    else {
+        cout << a + b + c;
     }
 
-    cout << a + b + c;
+   
 
 }
