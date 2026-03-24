@@ -22,9 +22,9 @@ class Solution {
             }
          }
         
-        for(Map.Entry<String,Integer> elem : map.entrySet()){
-            if(elem.getValue() == 1)
-                answer = elem.getKey();
+        for(String key : map.keySet()){
+            if(map.get(key) == 1)
+                answer = key;
         }
         return answer;
     }
