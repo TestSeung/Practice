@@ -10,11 +10,8 @@ class Solution {
         for(int i=0;i<nums.length;i++){
             m.put(nums[i],0);
         }
-        int count =0;
-        for(int num : m.keySet()){
-            count++;
-        }
-        answer = cnt<count ? cnt : count;
+        
+        answer = cnt<m.size() ? cnt : m.size();
          
         
         return answer;
