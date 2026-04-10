@@ -7,7 +7,7 @@ class Solution {
         
         for(int i =0;i<numlist.length;i++){
             length[i][0] = Math.abs(n-numlist[i]);
-            length[i][1] = Math.abs(numlist[i]);
+            length[i][1] = numlist[i];
         }
         
         Arrays.sort(length,new Comparator<int[]>(){
